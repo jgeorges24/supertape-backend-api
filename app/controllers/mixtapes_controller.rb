@@ -21,16 +21,26 @@ class MixtapesController < ApplicationController
 
     end
 
-    # def create
-        
 
 
-    # end
+     def create
+        mixtape = Mixtape.new(mixtape_params)
 
-    # def destroy
+        if mixtape.save
+            render json: Mixtape.all.to_json(:include => :opinions)
+        else
+            render json: {error: "error This did not save my bro!"}
+        end
+    end
 
 
-    # end
+
+    def destroy
+        mixtape = Mixtape.find(params[:id])
+        mixtape.destroy
+        render json: Mixtape.all.to_json(:include => :opinions)
+
+    end
 
 
 
@@ -39,7 +49,7 @@ class MixtapesController < ApplicationController
 
     def mixtape_params
 
-        params.require(:mixtape).permit(:title, :description, :likes, :artist, :genre, :dislikes)
+        params.require(:mixtape).permit(:title, :description, :likes, :artist)
 
     end
 
