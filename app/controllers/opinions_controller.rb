@@ -4,9 +4,9 @@ class OpinionsController < ApplicationController
 
         opinion = Opinion.new(opinion_params)
         if opinion.save
-            render json: Mixtape.all.to_json(:include => :opinion)
+            render json: Mixtape.all.to_json(:include => :opinions)
         else
-            
+
         end
 
 
@@ -14,10 +14,11 @@ class OpinionsController < ApplicationController
 
     def update
         opinion = Opinion.find(params[:id]) 
-
         if opinion.update(opinion_params)
-            render json: Mixtape.all.to_json(:include => :opinion)
+            render json: Mixtape.all.to_json(:include => :opinions)
         else
+        
+        end
 
 
 
