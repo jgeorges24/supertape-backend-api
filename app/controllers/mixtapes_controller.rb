@@ -39,7 +39,6 @@ class MixtapesController < ApplicationController
         mixtape = Mixtape.find(params[:id])
         mixtape.destroy
         render json: Mixtape.all.to_json(:include => :opinions)
-
     end
 
 
