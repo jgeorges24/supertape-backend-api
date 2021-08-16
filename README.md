@@ -1,24 +1,31 @@
-# README
+# SuperTape
+SuperTape BACK_END
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+README
 
-Things you may want to cover:
+SuperTape Javascript Web App.
 
-* Ruby version
+#Description
 
-* System dependencies
+Have you ever weanted to get feed back about your mixtape/demo tape and wanted an honest opinion, well now you can with this easy to use html web app.
 
-* Configuration
+#Installation
 
-* Database creation
+Guide fork and clone both front and back end repos, bundle install to make sure you have those gem files, run rails s in terminal, use broswer the terminal to open index.html file, this will open your browser and generate the web application. 
 
-* Database initialization
+#CONTRIBUTING
 
-* How to run the test suite
+JEAN GEORGES and open for more support and asstiance. If any issue file one using a pull request.
 
-* Services (job queues, cache servers, search engines, etc.)
+#USAGE
 
-* Deployment instructions
+user will be able to sign up, and log his/her mixtape with and watch other users leave opinions on the mixtape.
 
-* ...
+
+#Code Of Conduct
+
+Play nice you know right from wrong, so lets contribute peacfully and no negative vibes. use code respecfully.
+
+#LICESNE MIT
+
+This project has been licensed under the MIT open source license
